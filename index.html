@@ -11,7 +11,11 @@
 
 </head>
 <body>
-  
+    
+    <div onclick="Limpar();" class="titulo">
+        Jogo da Velha
+    </div>
+    
     <div class="tabuleiro">
 
         <div class="linha">
@@ -26,136 +30,16 @@
             <div onclick="Mostrar(6);" id="d6" class="celula"></div>
         </div>
 
-        <div class="linha">
+        <div>
             <div onclick="Mostrar(7);" id="d7" class="celula"></div>
             <div onclick="Mostrar(8);" id="d8" class="celula"></div>
             <div onclick="Mostrar(9);" id="d9" class="celula"></div>
         </div>
+
+        
     </div>
 </body>
 
-<script>
-    // Vamos criar nossas funções:
-
-    cliques = 0;  // Variável GLOBAL
-
-    function Mostrar(qual)
-    {
-        cliques = cliques + 1
-
-        if(qual == 1)
-        {
-            if(cliques == 1)
-            {
-                d1.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d1.innerHTML = "O"
-                cliques = 0
-            }  
-        }
-
-
-        if(qual == 2)
-        {
-            if(cliques == 1)
-            {
-                d2.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d2.innerHTML = "O"
-                cliques = 0
-            }
-        }
-
-        
-        if(qual == 3)
-        {
-            if(cliques == 1)
-            {
-                d3.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d3.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 4)
-        {
-            if(cliques == 1)
-            {
-                d4.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d4.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 5)
-        {
-            if(cliques == 1)
-            {
-                d5.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d5.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 6)
-        {
-            if(cliques == 1)
-            {
-                d6.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d6.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 7)
-        {
-            if(cliques == 1)
-            {
-                d7.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d7.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 8)
-        {
-            if(cliques == 1)
-            {
-                d8.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d8.innerHTML = "O"
-                cliques = 0
-            }
-        }
-        if(qual == 9)
-        {
-            if(cliques == 1)
-            {
-                d9.innerHTML = "X"
-            }
-            if(cliques == 2)
-            {
-                d9.innerHTML = "O"
-                cliques = 0
-            }
-        }
-    }
-</script>
+<script src="script.js">   </script>
 
 </html>
